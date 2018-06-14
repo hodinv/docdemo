@@ -1,8 +1,6 @@
 # Установка dev окружения
 
-# Инструменты
-
-#### Test
+## Инструменты
 
 Перед установкой самих инструментов нужно поставить все что перечисленно по [ссылке](https://hyperledger.github.io/composer/latest/installing/installing-prereqs.html)
 
@@ -35,30 +33,30 @@ tar -xvf fabric-dev-servers.tar.gz
 ./downloadFabric.sh
 ```
 
-##  Управление контейнерами
+###  Управление контейнерами
 
-### Запуск
+#### Запуск
 
 ```shell
 cd ~/fabric-tools
 ./startFabric.sh
 ```
 
-### Добавление карточки админа
+#### Добавление карточки админа
 
 ```shell
 cd ~/fabric-tools
 ./createPeerAdminCard.sh
 ```
 
-### Остановка
+#### Остановка
 
 ```shell
 cd ~/fabric-tools
 ./stopFabric.sh
 ```
 
-### Запуск песочницы
+#### Запуск песочницы
 
 ```shell
 composer-playground
@@ -66,8 +64,8 @@ composer-playground
 
 Сама песочница доступна по адресу [http://localhost:8080/login](http://localhost:8080/login)
 Необходимо чтобы была как минимум одна карточка создана (хотя бы админа)
-
-# IDE
+
+## IDE
 
 Рекомендуется использовать [VSCode](https://code.visualstudio.com/)
 После установки нужно поставить плагин для Hyperledger. Для этого
